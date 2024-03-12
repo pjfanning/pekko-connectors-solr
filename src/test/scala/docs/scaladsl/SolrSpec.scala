@@ -744,7 +744,7 @@ class SolrSpec extends AnyWordSpec with Matchers with BeforeAndAfterAll with Sca
       .uploadConfig(confDir.toPath, "conf")
     solrClient.setIdField("router")
 
-    assertTrue(!solrClient.getZkStateReader.getClusterState.getLiveNodes.isEmpty)
+    assertTrue(!solrClient.getClusterState.getLiveNodes.isEmpty)
   }
 
   private val number = new AtomicInteger(2)
