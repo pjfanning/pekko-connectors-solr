@@ -7,7 +7,7 @@ ThisBuild / crossScalaVersions := Seq(scala213Version, "2.12.19", "3.3.3")
 ThisBuild / resolvers += Resolver.ApacheMavenSnapshotsRepo
 
 val PekkoVersion = "1.0.2"
-val SolrjVersion = "8.11.3"
+val SolrjVersion = "9.5.0"
 
 lazy val root = (project in file("."))
   .settings(
